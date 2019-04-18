@@ -13,6 +13,13 @@
 
 #include "imx6_spl.h"
 
+/* Configs for silent boot */
+#define CONFIG_SILENT_CONSOLE
+#define CONFIG_SYS_DEVICE_NULLDEV
+#define CONFIG_SILENT_CONSOLE_UPDATE_ON_SET
+#define CONFIG_SILENT_U_BOOT_ONLY
+#define CONFIG_SILENT_CONSOLE_UPDATE_ON_RELOC
+
 #define CONFIG_IMX_THERMAL
 
 #define CONFIG_SYS_MALLOC_LEN		(10 * SZ_1M)
