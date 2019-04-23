@@ -126,6 +126,7 @@
 		"if test $fdtfile = undefined; then " \
 			"echo WARNING: Could not determine dtb to use; fi; " \
 		"setenv fdt_file ${fdtfile}; \0" \
+	"stdout=nulldev\0" \
 	BOOTENV
 
 #define CONFIG_BOOTCOMMAND \
