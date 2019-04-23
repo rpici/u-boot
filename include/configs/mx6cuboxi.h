@@ -124,7 +124,8 @@
 		"if test $board_name = CUBOXI && test $board_rev = MX6DL ; then " \
 			"setenv fdtfile imx6dl-cubox-i.dtb; fi; " \
 		"if test $fdtfile = undefined; then " \
-			"echo WARNING: Could not determine dtb to use; fi; \0" \
+			"echo WARNING: Could not determine dtb to use; fi; " \
+		"setenv fdt_file ${fdtfile}; \0" \
 	BOOTENV
 
 #define CONFIG_BOOTCOMMAND \
